@@ -1,8 +1,6 @@
-package matrixLibrary.File;
+package matrixLibrary.file;
 
-import matrixLibrary.dataTypes.UnsignedInteger;
 import matrixLibrary.matrix.Matrix;
-import matrixLibrary.operations.genericOperations.dataTypes.UnsignedIntegerGeneric;
 import matrixLibrary.operations.genericOperations.genericInterface.GenericOperations;
 
 import java.io.*;

@@ -1,4 +1,4 @@
-package matrixLibrary.File;
+package matrixLibrary.file;
 
 import matrixLibrary.matrix.Matrix;
 

@@ -1,7 +1,7 @@
 package matrixLibrary.matrix;
 
-import matrixLibrary.File.Export;
-import matrixLibrary.File.Import;
+import matrixLibrary.file.Export;
+import matrixLibrary.file.Import;
 import matrixLibrary.operations.genericOperations.genericInterface.GenericOperations;
 import matrixLibrary.operations.matrixOperations.MatrixOperations;
 
@@ -12,12 +12,12 @@ import java.util.List;
 public class Matrix<T extends Number> {
     private int rows, columns;
     private List<List<T>> matrix;
-    private Import<T> tImport;
-    private Export<T> tExport;
+    private final Import<T> tImport;
+    private final Export<T> tExport;
     private MatrixOperations matrixOperations;
 
 
-    public Matrix(String path,GenericOperations<T> genericOperations) {
+    public Matrix(String path, GenericOperations<T> genericOperations) {
         this.matrix = new ArrayList<>();
         this.tImport = new Import<T>(genericOperations);
         this.tExport = new Export<>();
